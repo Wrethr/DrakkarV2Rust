@@ -1,4 +1,4 @@
-# drakkar
+# drakkarV2
 
 A fast, incremental CLI build system for C/C++ projects, written in Rust using only `std`.
 
