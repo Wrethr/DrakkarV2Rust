@@ -1,0 +1,22 @@
+[package]
+name = "drakkar"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI build system for C/C++ projects"
+authors = ["drakkar contributors"]
+
+[[bin]]
+name = "drakkar"
+path = "src/main.rs"
+
+[dependencies]
+# Pure std — no external crates required.
+# Optional: if you want process-group kill on Unix, add:
+# libc = { version = "0.2", optional = true }
+# [features]
+# process_groups = ["libc"]
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true

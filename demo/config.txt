@@ -1,0 +1,26 @@
+# drakkar config — project: demo
+app_name = "demo"
+source_dir = "src/"
+output_dir = "out/"
+temp_dir = "target/"
+
+# Compiler flags
+c_flags = "-Wall -Wextra -std=c11"
+cxx_flags = "-Wall -Wextra -std=c++17"
+ld_flags = ""
+include_dirs = ""
+link_libs = ""
+
+# Standards
+c_standard = "c11"
+cxx_standard = "c++17"
+
+# Compiler paths (defaults: gcc, g++)
+gcc_path = "gcc"
+gpp_path = "g++"
+
+# Build options
+parallel_jobs = "4"
+incremental = "true"
+preserve_temp = "true"
+use_process_groups = "false"
